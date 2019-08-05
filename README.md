@@ -1,37 +1,72 @@
-## 这是小熊的网页嗷
+#Site
+title: 可爱小熊的网站嗷
+description: 这是一个七夕礼物嗷.
+logo: favicon.png
+url: bear.me
+rss_url: /feed.xml
 
-送给小陈的七夕礼物
+# Jekyll
+permalink:          /blog/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+sass:
+  sass_dir:         assets/_sass
+  style:            compressed
 
-Yes，this is a gift.
+# Comment
+comment:
+  disqus: kongsong    
+  # duoshuo: kongsong
+  # youyan: 2122392
+  laibili: MTAyMC8yODgzNC81NDA0
 
-### Markdown
+# Website analytics
+google_analytics: UA-82494501-1
+baidu_analytics: 5b31ffbbdc6cff18727f3adf75a03777    #from //hm.baidu.com/hm.js?***
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Author information:
+author:
+  #resume: /resume
+  name: Song Kong     #the name of Blog section
+  about_me: I'm Song Kong, a student from BUPT. This is my online home & blog, where I share thoughts about front-end development, my daily life and other insteresting topics. Feel free to contact me by email if you have any question.
+ 
+# Social Links
+email:               hi@kongsong.me
+#google.plus:        username
+#twitter:            username
+facebook:            kongsong
+github:              songkong
+stackoverflow:      6438519/song-kong   #from a "http://stackoverflow.com/users/123456/username" link
+linkedin:           kongsong
+#xing:              username
+#instagram:          username
+#lastfm:            username
+#tumblr:            username
+#pinterest:         username
+#foursquare:        username
+#steam:              username
+#dribbble:          username
+#youtube:           username
+#soundcloud:        username
+#weibo:             username
+#flickr:            username
+#codepen:           username
+#keybase:           username
+#xmpp:              username@server.com
+#hackernews:        username
+#behance:           username
 
-```markdown
-Syntax highlighted code block
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
 
-# 七夕快乐
-## 每天都快乐
-### 每时每刻都快乐
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/madrian233/madrian233.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile,.sass-cache,.DS_Store,.idea]
